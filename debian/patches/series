@@ -1,0 +1,8 @@
+01_init_script_additions.patch
+02_manpage_additions.patch
+03_fix_ftbfs4hurd.patch
+50_add_init_retry.patch
+60_fix_racey_test.patch
+CVE-2011-4971.patch
+CVE-2013-0179.patch
+CVE-2013-7239.patch
