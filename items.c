@@ -482,6 +482,7 @@ void do_item_stats_sizes(ADD_STAT add_stats, void *c) {
 /** wrapper around assoc_find which does the lazy expiration logic */
 item *do_item_get(const char *key, const size_t nkey, const uint32_t hv) {
     mutex_lock(&cache_lock);
+    sleep(2);
     item *it = assoc_find(key, nkey, hv);
     if (it != NULL) {
         refcount_incr(&it->refcount);
